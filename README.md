@@ -8,6 +8,10 @@ The focus of this project is not chasing the highest accuracy number. It is unde
 
 ## Headline result
 
+**Live API:** https://customer-churn-prediction-25yg.onrender.com/docs
+
+*Hosted on a free tier, so the first request after a period of inactivity may take up to a minute while the server wakes up.*
+
 The final model catches **79% of customers who actually churn** (recall on the churn class), using a Balanced Logistic Regression.
 
 A more complex tuned XGBoost model reached 81% recall, but only by a margin of 0.02 after a 60-configuration grid search, and it lost on F1 score. The simpler model was chosen because it is easier to interpret, faster to run, and simpler to deploy, while performing within a hair of the complex one.
